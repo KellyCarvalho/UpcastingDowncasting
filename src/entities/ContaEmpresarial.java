@@ -31,7 +31,8 @@ public String toString() {
 }
 
 @Override
-public void saque(double valor) {
+public final void saque(double valor) {
+	//o final será usado neste caso para que uma possível classe herdeira não sorbeponha o método já sobreposto, podendo gerar inconsistência
 	super.saque(valor);
 	balanco-=2.6;
 	
