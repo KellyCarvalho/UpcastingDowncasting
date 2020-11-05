@@ -30,6 +30,12 @@ public String toString() {
 			+ getNumero() + ", Titular()=" + getTitular() + ", Saldo=" + getBalanco();
 }
 
+@Override
+public void saque(double valor) {
+	super.saque(valor);
+	balanco-=2.6;
+	
+}
 
 
 }

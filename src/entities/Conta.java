@@ -48,7 +48,7 @@ public class Conta {
 	}
 	
 	public void deposito(double valor) {
-		balanco+=valor;
+		balanco+=valor-5;
 		
 	}
 

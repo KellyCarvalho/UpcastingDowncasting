@@ -21,5 +21,10 @@ public void atualizarSaldo() {
 	balanco+=balanco *TaxaJuros;
 }
 
+@Override
+public void saque(double valor) {
+	balanco-=valor;
+	
+}
 
 }
